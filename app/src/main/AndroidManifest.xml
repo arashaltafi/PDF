@@ -3,50 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.arash.altafi.pdf">
 
-<!--     for pdf 2-->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PDF"
-        android:requestLegacyExternalStorage="true">
-
+        android:theme="@style/Theme.PDF">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <!-- pdf 2 -->
+            android:name=".pdf3.Pdf3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".pdf4.Pdf4Activity"
+            android:exported="false" />
         <activity
             android:name=".pdf2.Pdf2Activity"
             android:exported="true" />
-
         <activity
             android:name=".pdf2.permission.PermissionsActivity"
-            android:screenOrientation="portrait" />
-
-        <!-- File Provider -->
-        <provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="com.arash.altafi.pdf.pdf2.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths" />
-        </provider>
-        <!-- pdf 2 -->
-
-        <!-- pdf 1 -->
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".pdf1.PdfCreateHtmlActivity"
             android:exported="true" />
@@ -59,6 +38,26 @@
         <activity
             android:name=".pdf1.Pdf1Activity"
             android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.arash.altafi.pdf.pdf2.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
     </application>
 
 </manifest>

@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.arash.altafi.pdf.databinding.ActivityMainBinding
 import com.arash.altafi.pdf.pdf1.Pdf1Activity
 import com.arash.altafi.pdf.pdf2.Pdf2Activity
+import com.arash.altafi.pdf.pdf3.Pdf3Activity
+import com.arash.altafi.pdf.pdf4.Pdf4Activity
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,6 +29,14 @@ class MainActivity : AppCompatActivity() {
 
         btnPdf2.setOnClickListener {
             startActivity(Intent(this@MainActivity, Pdf2Activity::class.java))
+        }
+
+        btnPdf3.setOnClickListener {
+            startActivity(Intent(this@MainActivity, Pdf3Activity::class.java))
+        }
+
+        btnPdf4.setOnClickListener {
+            startActivity(Intent(this@MainActivity, Pdf4Activity::class.java))
         }
     }
 
