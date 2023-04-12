@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.arash.altafi.pdf">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
 
     <application
@@ -16,10 +17,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PDF">
         <activity
-            android:name=".pdf3.Pdf3Activity"
+            android:name=".pdf5.Pdf5Activity"
             android:exported="false" />
         <activity
             android:name=".pdf4.Pdf4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".pdf3.Pdf3Activity"
             android:exported="false" />
         <activity
             android:name=".pdf2.Pdf2Activity"
@@ -58,7 +62,6 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths" />
         </provider>
-
     </application>
 
 </manifest>

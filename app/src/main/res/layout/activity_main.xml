@@ -43,6 +43,13 @@
                 android:layout_marginTop="8dp"
                 android:text="pdf 4" />
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPdf5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="pdf 5" />
+
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.core.widget.NestedScrollView>
