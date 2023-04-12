@@ -65,4 +65,6 @@ dependencies {
     //pdf 4
     implementation 'es.voghdev.pdfviewpager:library:1.0.3'
 
+    //pdf 5
+    implementation 'com.pspdfkit:pspdfkit:8.6.0'
 }

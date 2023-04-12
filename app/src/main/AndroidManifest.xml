@@ -53,6 +53,10 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name="com.pspdfkit.ui.PdfActivity"
+            android:windowSoftInputMode="adjustNothing" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.arash.altafi.pdf.pdf2.fileprovider"
